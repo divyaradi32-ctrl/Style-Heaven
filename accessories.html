@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style Heaven | Accessories</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:18px;
+    font-size:30px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+/* Navigation */
+
+nav{
+    background:#222;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 18px;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff9800;
+}
+
+/* Hero Section */
+
+.hero{
+    background:url("https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=1600") center/cover no-repeat;
+    height:690px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,.55);
+    color:#fff;
+    padding:35px;
+    border-radius:12px;
+}
+
+.hero-content h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#ff9800;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e68900;
+}
+
+/* Products */
+
+.products{
+    padding:60px 8%;
+}
+
+.products h2{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:40px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card h3{
+    text-align:center;
+    margin-top:15px;
+    font-size:22px;
+}
+
+.price{
+    text-align:center;
+    color:#ff5722;
+    font-size:20px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.card button{
+    display:block;
+    margin:15px auto 20px;
+    padding:10px 25px;
+    border:none;
+    background:#111;
+    color:#fff;
+    border-radius:25px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card button:hover{
+    background:#ff9800;
+}
+
+/* Footer */
+
+footer{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero{
+    height:300px;
+}
+
+.hero-content h1{
+    font-size:34px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+STYLE HEAVEN
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="women.html">Women</a>
+<a href="men.html">Men</a>
+<a href="accessories.html">Accessories</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="cart.html">Cart</a>
+<a href="ordernow.html" class="order-btn">Order Now</a>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Fashion Accessories</h1>
+
+<p>Complete Your Look with Premium Accessories</p>
+
+<a href="#products" class="btn">Shop Now</a>
+
+</div>
+
+</section>
+
+<section class="products" id="products">
+
+<h2>Featured Accessories</h2>
+
+<div class="product-grid">
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=600" alt="Luxury Watch">
+    <h3>Luxury Watch</h3>
+    <p class="price">₹2,499</p>
+    <button><a href="https://www.amazon.in/Tommy-Hilfiger-Bank-Analog-Watch-TH1791718W/dp/B08HVGG1GG/ref=sr_1_3_sspa?crid=309NSK2WT3504&dib=eyJ2IjoiMSJ9.GP7XuvsFhpQPfJYmSOHpuX9otuRotWXZ_E9AjXOB-DtSPn7TaeoJkmdkhSKJhDDY0uAIPAHT1I8TuZsqmn1Uo4Ps3VuZiTmvhDiN-woDTk_hyp-Jv8bFeOWL90iws7zBVNQIDaLgpOV-9ESHzIpu6YCEHuJnXUy0LRIyb3FPMul3SfrSKzq8b8qGDYI_vj1xV8W4bNtjV4wPSQUcpRF01HCPHS1eM_bAyRTxVBGtPLbcrKqeJIrX8H9xUejSX3b0gbV7Ia_F5EZrQdDXsorvdF8cXo54ZkeF-4iPDcJRpPc.M-27z-yd0IxorJQknJeBnZ5sxgufDhSGdvIMZZ22q1o&dib_tag=se&keywords=luxury+watches+for+men+blue&qid=1786093469&s=apparel&sprefix=luxury+wat%2Capparel%2C391&sr=1-3-spons&aref=IxWGFoWs08&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+class="btn" target="blank">Order Now</a></button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600" alt="Sports Shoes">
+    <h3>Sports Shoes</h3>
+    <p class="price">₹2,999</p>
+    <button><a href="https://www.amazon.in/stores/page/A1B4E6E5-E0FC-437C-A8B3-57A076B5A684/?_encoding=UTF8&store_ref=SB_A0287627ZPKYY2L5SM1K-A102511239SKQJI3BYY0N&pd_rd_plhdr=t&aaxitk=3b791d18e6edc0c2ebe60d848d5a7ce6&hsa_cr_id=0&lp_query=sports%20shoes%20s%20for%20man&lp_slot=auto-sparkle-hsa-tetris&aref=k1B5ItkWRB&ref_=sbx_be_s_sparkle_ssd_page_1_img&pd_rd_w=ZyLgN&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=DX2D9EQZ8BFQV4GVAK22&pd_rd_wg=S73VD&pd_rd_r=1102c4d0-0650-4ae1-824e-298d93fa7866"
+class="btn" target="blank">Order Now</a></button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600" alt="Sunglasses">
+    <h3>Stylish Sunglasses</h3>
+    <p class="price">₹899</p>
+    <button><a href="https://www.amazon.in/Zadinga-Classic-Sunglasses-Polarized-Protection/dp/B0H1H6KDBN/ref=sr_1_6?crid=391FMX8Y6SHZD&dib=eyJ2IjoiMSJ9.MpsP_2_7isibmDVmE1oHAnrwA52EIJSJBfF-1ge4tqtm6HP1cefARGqOeqUYmgNGFO_A1Z0mn6FZXqRyVeqrXbwYM_W2IyYEFfUMpLTBHd-8LcScBX8utoB3BWk5RKAS7ioM3pCsjUVdEAVo95cBOvkRs5CMQMfaWtS4cJXU7Syq67MZFhfrTgwJ5ByoE2XaUEQbtH7pnyoIBnrLl_ieDdgBkEFkjTrq0e_fC4rC19W70uXSStuVs6c8fYO1pj3X6qfAORZFQqMmZi8gUqFCBsO0HTKzmxzJ3Wu_imksgV8.ClESTbLPykC-aZl2aYa2u6rV4R1VjDPbIEBJhJqLrDM&dib_tag=se&keywords=sunglasses+for+men+stylish&qid=1786093638&s=apparel&sprefix=sunglasses+men%2Capparel%2C273&sr=1-6"
+class="btn" target="blank">Order Now</a></button>
+</div>
+
+<div class="card">
+    <img src="C:\Users\User\Desktop\style heaven\imges\latherwalet.jpg" alt="Leather Wallet">
+    <h3>Leather Wallet</h3>
+    <p class="price">₹799</p>
+    <button><a href="https://www.amazon.in/Milano-Leather-Bifold-Wallet-Multicard/dp/B0D59QZGMV/ref=sr_1_2_sspa?crid=2GA6UNC5935F7&dib=eyJ2IjoiMSJ9.hrDlGeobRH_AOF3zr7lO8DDwnhjX6IyCshtpJTsJQ351bCV5SSlPRI0Njha33LKlZqoDMWtvMezZSkjaaeYLRt6Md0i2dQW82MH2IYBj15RTe69tnuZXeoq8h519jzUzQ2g9eDSBnRWj4d-LvBtGjKS3ZQ0RxM5zUgzDz9cWOpCz3dosuaOos4AmAkNw1kz82jPCKabi4fnFTfJItBS2CdzOBDqD9Lb3FVLGeadTlafLNf9_uHAegcHSnVRJqarwolooFTyawLUq570vVhYXOmsj2De4v2i2RMDrhZRDC2I.FAnizjk2s-BsdVEyaG-EoLDM848_NA2r9joDNlMk2cY&dib_tag=se&keywords=lather+wallet+for+men&qid=1786093700&sprefix=lather+walet%2Caps%2C295&sr=8-2-spons&aref=KG6pdslleG&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+class="btn" target="blank">Order Now</a></button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=600" alt="Handbag">
+    <h3>Fashion Handbag</h3>
+    <p class="price">₹1,699</p>
+    <button><a href="https://www.amazon.in/gp/aw/d/B0BSXM4DKJ/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=1ca300597acc80518a26b0c01871da5c&hsa_cr_id=0&qid=1786094271&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&i=aps&aref=vdoC3puOVk&ref_=sbx__sbtcd_asin_1_img&pd_rd_w=Tsb4o&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=31QSE1EN2T3AXK2K07SF&pd_rd_wg=E2iM4&pd_rd_r=284da6c5-4868-47dd-a7b0-44b431cf8560"
+class="btn" target="blank">Order Now</a></button>
+</div>
+
+<div class="card">
+    <img src="C:\Users\User\Desktop\style heaven\imges\latherbelt.jpg" alt="Leather Belt">
+    <h3>Leather Belt</h3>
+    <p class="price">₹699</p>
+    <button><a href="https://www.amazon.in/Labnoft-Reversible-Leather-Turning-Buckle/dp/B07MZ3B4SS/ref=sr_1_2_sspa?crid=QYBP21QHI1TH&dib=eyJ2IjoiMSJ9.MpiZ3J97JrDHlViIebh81onPYPMD1R4D36BrG8c9qn2_GShKQulAbS8Ka3gC_m-1OdI9Pasq6URQQlOigsS0w3gHos9IgFYI0w6IGUZjr4aRxSu77HZnBHS3kJWJGSVnXwgX_HQYp05qJ3OoOJRp6sWalJUpQ-Z0mDiLD1uX3DWEfp64TO45MYpKC9UU_X_FBjt6vG55LIYPOrIzawaGCeLgRLhKPsZR7gzH-cb46GQcM3fTKb0czCwER8Ix4NkZpOAAe6uoMG0h_4Lh1dqgmI_HBCHs4lLvn5UnPS21MOA.K5wwG0KL0kh8a10kFq4Bip_HdOiA0jsRFFjajhe96C0&dib_tag=se&keywords=lather%2Bbelts%2Bfor%2Bmen&qid=1786094323&sprefix=lather%2Bbelt%2Caps%2C315&sr=8-2-spons&aref=iTqJ0ReF9Q&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1"
+class="btn" target="blank">Order Now</a></button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1521369909029-2afed882baee?w=600" alt="Cap">
+    <h3>Stylish Cap</h3>
+    <p class="price">₹599</p>
+    <button><a href="https://www.amazon.in/SELLORIA-Cotton-Adjustable-Freesize-Baseball/dp/B0CFR518WH/ref=sr_1_6?crid=2K5WAIL8QEMIG&dib=eyJ2IjoiMSJ9.mkmEcsYKqXMeXe1CywB4S5LrvsccfN2kCXKnh0cY8viKgjFLOLDHnJOkM3Dfkf26YtX5QiVAh-7PL2S80ip07uqdBoDJ7cf1_3A3Xj1qwkDJRoRZLlkxyApM5_R3IWoYh7nmJMZbKx8X4b8AMidINlW0nFwFZeORnciCfRYETRuy80vW62iZgsRJXCiEKUw4F1HPaarHzKpNjos-YoKOvZ2vIJWavwXfO26gs2lZkX0xrMoy5g7rMeJFPJ8gepJcObiECke1MPU3vGEqfY0PSoRGFb5rA_GD9mlyN_FxNxk.JmlzQhZ6W6qTD6GwOb4CbCvBDVRgojiomRTr7FOCZaM&dib_tag=se&keywords=caps%2Bfor%2Bmen%2Boriginal&qid=1786094388&sprefix=caps%2Bfor%2Bmen%2Caps%2C316&sr=8-6&th=1&psc=1"
+class="btn" target="blank">Order Now</a></button>
+</div>
+
+<div class="card">
+    <img src="C:\Users\User\Desktop\style heaven\imges\silverbracelet.jpg" alt="Bracelet">
+    <h3>Silver Bracelet</h3>
+    <p class="price">₹999</p>
+    <button><a href="https://www.amazon.in/GIVA-Adjustable-Valentines-Certificate-Authenticity/dp/B0CHVVRMZ1/ref=sr_1_4_sspa?crid=1VBMQCDM0IBC8&dib=eyJ2IjoiMSJ9.p5o5v9omUT9brlXldvkL9PWq_4SP3taZ-MDReHDR9GGjjU2VISZlGlR_a70340q07bBm4al9bE3LFyIu67x-5-WTNi9ZdBKP9hXQBrlwua0UzHO66ttQO-kFNIzrPHOJu5VJLTkOQezLhEBsLn0vWNS-8QJ_wWUNGpIyAooQtCpl5ywPmvVKVwMuzr1SjByZWI9MQB2qyo6zba4HVbIb4KLmqxI3x72_D4qOElAoLJIcFsq2p1_kZi0LUF0vkgje_gD-zk3Xwzg9MjnT2vxIuPU1i9WVP90t_Q1eV7lhw3A.G9Fg-z7ZMEk5xzaIVC6LQ6StFu26itxZad6CjxCK58g&dib_tag=se&keywords=silver+bracelet+men+original&qid=1786093880&sprefix=silver+bracelet+men%2Caps%2C360&sr=8-4-spons&aref=O6cTu8Nr6n&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+class="btn" target="blank">Order Now</a></button>
+</div>
+</div>
+
+</section>
+
+<footer>
+
+    <h3>Style Heaven</h3>
+
+    <p>Your One-Stop Destination for Premium Fashion Accessories</p>
+
+    <br>
+
+    <p>Email: styleheaven@gmail.com</p>
+
+    <p>Phone: +91 98765 43210</p>
+
+    <br>
+
+    <p>&copy; 2026 Style Heaven. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

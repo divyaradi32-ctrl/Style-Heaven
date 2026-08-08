@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style Heaven | Women</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:#111;
+    color:#fff;
+    padding:18px;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+/* Navigation */
+
+nav{
+    background:#222;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 18px;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff69b4;
+}
+
+/* Hero Section */
+
+.hero{
+    background: url("imges/womenhero.png") no-repeat center center;
+    background-size: cover;
+    height:690px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top:20px;
+}
+
+.hero-content{
+    background:rgba(0,0,0,.55);
+    color:white;
+    padding:35px 45px;
+    border-radius:12px;
+    max-width:650px;
+}
+
+.hero-content h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#ff4081;
+    color:#ffffff;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e91e63;
+    text-decoration:none;
+}
+
+/* Products */
+
+.products{
+    padding:60px 8%;
+}
+
+.products h2{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:40px;
+    row-gap:20px;
+    columngap:20px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    padding:40px;
+
+}
+
+.card{
+    width:100%;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+    transition:.3s;
+    margin:0;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    display:block;
+}
+
+.card h3{
+    text-align:center;
+    margin-top:15px;
+    font-size:22px;
+}
+
+.price{
+    text-align:center;
+    color:#e91e63;
+    font-size:20px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.card button{
+    display:block;
+    margin:15px auto 20px;
+    padding:10px 25px;  
+    color:white;    
+    cursor:pointer;
+    transition:.3s;
+    text-decoration:none;
+}
+
+.card button:hover{
+    background:#ff4081;
+    text-decoration:none;
+}
+
+/* Footer */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero{
+height:300px;
+}
+
+.hero-content h1{
+font-size:34px;
+}
+
+.hero-content p{
+font-size:16px;
+}
+
+nav a{
+display:block;
+margin:10px 0;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+STYLE HEAVEN
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="women.html">Women</a>
+<a href="men.html">Men</a>
+<a href="accessories.html">Accessories</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="cart.html">Cart</a>
+<a href="ordernow.html" class="order-btn">Order Now</a>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Women's Fashion Collection</h1>
+
+<p>Elegant Styles • Trending Outfits • Premium Quality</p>
+
+<a href="#products" class="btn">Shop Now</a>
+
+</div>
+
+</section>
+
+<section class="products" id="products">
+
+<h2>Featured Women's Collection</h2>
+
+<div class="product-grid">
+<div class="card">
+    <img src="C:\Users\User\Desktop\style heaven\imges\dress3.jpg" alt="Floral Dress">
+    <h3>Floral Dress</h3>
+    <p class="price">₹1,299</p>
+    <button><a href="https://www.amazon.in/Yash-Gallery-Womens-Floral-Printed/dp/B0DSPLL15V/ref=sr_1_3_sspa?crid=1FNRPYH7JV146&dib=eyJ2IjoiMSJ9.YIQqAfgy3oG7A-qtvbCbg-iBHf55310Re2-kE64Bl5-C04MrcOCYmP-yAQwwBFTNFHEKJ-4Hl_noovfprJ6NvgmIvOYONcLUW_5LIXEGwdKTI2FFWfpur7WcyvQQDHpMYbH_TeUvjws16C0IgxdC9cXpA9huJMywAZKPEwB6XEwjGsWl5gW4wOfiMymM_LmYUTHRsAfN49s53uty9fhLnm7TGG4enjzHb21wNi7rYuTrIFsZ0AVWNdM07r6YRlncbz1QyeaWA0KC5FlYeUcLeusN719XU5CXJyqRxcusMKA.zpBLOx2yPcFlIvRgiDhdKw3xqLAXUaoHo71Fc-lTpo4&dib_tag=se&keywords=women%2Bfloral%2Bdress&qid=1786008203&sprefix=women%2Bfloral%2Bdres%2Caps%2C385&sr=8-3-spons&aref=AHu4lQe5d5&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&psc=1"
+ class="btn" target="blank" >Order Now</a></button>
+</div>
+
+ <div class="card">
+    <img src="C:\Users\User\Desktop\style heaven\imges\partywear.jpg" alt="Party Wear Gown">
+    <h3>Party Wear Gown</h3>
+    <p class="price">₹2,499</p>
+    <button><a href="https://www.amazon.in/ELLITI-Georgette-Stitched-Traditional-Stunning/dp/B0FN4NFGCF/ref=sr_1_13_sspa?crid=3LTCHMSSCEZ4E&dib=eyJ2IjoiMSJ9.JRHXb949he_XSrW5sfnmEL-FiwpzgJYcqQ8KE9M3f-x7FzUpmwups95TY2HqIzDYEEJPXeXuApoIzDn9YvOqGUVRWOz9jIhIzW3VrfBsVzJPLHdeYtKh7Dz6LbpGcBzIBUStWoTmROsyunjrXUiYDjuDV5GOcd6XGxefcATpJU8HST8YldnKBCIsFxNJoeYZdLPrmeKNdATc5f9xmYXcq8Ss2cM1-hKMyBSRazqYSR_N5M4DkkVavunmdrR2IvFZlAdqVbXIcQ05apsomN4IXxwOsRmK2MFEMA8Xqnb-i1w.7hmUH6kNNIal_GkmkvEMMbUbLwVG7DLlnlOGQ_UujUo&dib_tag=se&keywords=party%2Bgown%2Bwoman%2Bwestern&qid=1786077681&sprefix=party%2Bgown%2Caps%2C326&sr=8-13-spons&aref=enInsy8oXd&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1&psc=1"
+class="btn" target="blank" >Order Now</a></button>
+</div>
+<div class="card">
+    <img src="C:\Users\User\Desktop\style heaven\imges\top.jpg" alt="Casual Top">
+    <h3>Casual Top</h3>
+    <p class="price">₹799</p>
+    <button><a href="https://www.amazon.in/Asmeriyo-Floral-Tiered-Western-GREY-FLORAL-M/dp/B0GYFD3F5H/ref=sxin_13_pa_sp_search_thematic_sspa?content-id=amzn1.sym.ed1dc214-655d-439d-94db-1ad9c2f35607%3Aamzn1.sym.ed1dc214-655d-439d-94db-1ad9c2f35607&crid=P0TP1XA65PZZ&cv_ct_cx=western%2Bcasual%2Btops%2Bfor%2Bwoman&keywords=western%2Bcasual%2Btops%2Bfor%2Bwoman&pd_rd_i=B0GYFD3F5H&pd_rd_r=2947aacc-040f-4bd8-9774-8e944428efbd&pd_rd_w=JG0QS&pd_rd_wg=slEuS&pf_rd_p=ed1dc214-655d-439d-94db-1ad9c2f35607&pf_rd_r=8A5Y17YS2R2CCH2YBTE6&qid=1786012183&s=apparel&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=casual%2Btops%2Capparel%2C381&sr=1-3-883a54c7-f466-4d42-997c-6d482a360a1a-spons&aref=jzketEhUH3&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&psc=1" 
+class="btn" target="blank">Order Now</a></button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600" alt="Denim Jacket">
+    <h3>Denim Jacket</h3>
+    <p class="price">₹1,699</p>
+    <button><a href="https://www.amazon.in/Urbano-Fashion-Relaxed-Utility-womjaktw-denimutfl-black-m/dp/B0GH49B6KW/ref=sxin_13_pa_sp_search_thematic_sspa?content-id=amzn1.sym.ed1dc214-655d-439d-94db-1ad9c2f35607%3Aamzn1.sym.ed1dc214-655d-439d-94db-1ad9c2f35607&crid=3LM9WWLWF9W8Y&cv_ct_cx=denim%2Bjacket%2Bfor%2Bwoman&keywords=denim%2Bjacket%2Bfor%2Bwoman&pd_rd_i=B0GH49B6KW&pd_rd_r=c2aad09f-b9e0-48bd-b562-2b4cf53caaa0&pd_rd_w=H3w1R&pd_rd_wg=YBqML&pf_rd_p=ed1dc214-655d-439d-94db-1ad9c2f35607&pf_rd_r=C73W6SVQ84FGGKAAJB9K&qid=1786077800&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=demin%2Bjacket%2Caps%2C476&sr=1-2-883a54c7-f466-4d42-997c-6d482a360a1a-spons&aref=RXU4RpeHwW&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&psc=1"
+class="btn" target="blank">Order Now</a></button>
+</div>
+
+<div class="card">
+    <img src="C:\Users\User\Desktop\style heaven\imges\dress5.jpg" alt="Summer Dress">
+    <h3>Summer dress</h3>
+    <p class="price">₹1,199</p>
+    <button><a href="https://www.amazon.in/GRECIILOOKS-Elegant-Dresses-Occasions-GL-WD1334-3XL-BLUE/dp/B0FPB6TQ8R/ref=sr_1_8?crid=15S3C5MNEN81Y&dib=eyJ2IjoiMSJ9.vKGRbMvTvekn204cI3usiAUWN1j82i2npHvje3qJyac-SQOkN2dsbv_fn516vEpU4LpTkcgWvPJ6ull67cbICTrrUVrCKGRyDKeBYagc_8uwyeqqI9ATBK6xsj8iD3iY0FPTbaK9HqbR3HowNszQZH1GUGNdtJNitYbDpngm7v19Xml0MZ_9TyYfyC27xSLHl-8njN3N-BjWG0V-p8dO3YDTuU4NMJeaOoVDOn2Ed8cYyL3EGaiedDfYOeSbqSTRfN35bAnX_sMhLv7clR4yoi8OIe9n5J0RLvWtawf3BXE.DhNd8_Yv4wYsCLDmgEjoCPzRpZqh0-buNOQJ1BZYszk&dib_tag=se&keywords=summer%2Bdress%2Bfor%2Bwomen&qid=1786092167&sprefix=summer%2Caps%2C441&sr=8-8&th=1&psc=1"
+class="btn" target="blank">Order Now</a></button>
+</div>
+<div class="card">
+    <img src="C:\Users\User\Desktop\style heaven\imges\lehengaa.jpg">
+    <h3>Lehangas</h3>
+    <p class="price">₹1,499</p>
+    <button><a href="https://www.amazon.in/Zeel-Clothing-Sequins-Embroidered-6019-Green-Women-Lehenga-Choli-Latest/dp/B0GDN3V3Q7/ref=sr_1_4_sspa?crid=25T6ULDAH76NL&dib=eyJ2IjoiMSJ9.DXlmCjFkiIuYiGzq6xCvIlAaOuPEH-IEVnR_f0WTCcIEFnXycNLAmppjazH59otc-heywfE-UqXTMmzXrJs88-UoeQz-Q2WNl9OvziBwjZurPKwT8V6tY2W9-5KredSGGUiGNffI9zmtwfpFx317X1Sh4PSD8Jk3d-R4kKr6pHXEeUKA5O2LpRosRMa7qtRWX5Fm4MIZBz1HGbif0xfdcOUU1K27GkPYX4s05MlGuWVMb7TrcmjNHKfGsx3GaiDovE7vOUVVb0wUgrv_cBGU5-ANk2cQChKs-dcecd17wYw.qYMbMrat2fUFQ6dG_6-PCE6xe0hkiObbg564FD72PLI&dib_tag=se&keywords=lehengas+for+women&qid=1786014038&sprefix=lehangas%2Caps%2C369&sr=8-4-spons&aref=ccNthUKKuQ&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+class="btn" target="blank">Order Now</a></button>
+</div>
+<div class="card">
+    <img src="C:\Users\User\Desktop\style heaven\imges\saree1.jpg" alt="Designer Saree">
+    <h3>Designer Saree</h3>
+    <p class="price">₹2,999</p>
+    <button><a href="https://www.amazon.in/Satrani-Womens-Weaving-Unstitched-5176S154N_Teal/dp/B0GMWXK3HJ/ref=sr_1_1_sspa?crid=2DJHANTM5AFGB&dib=eyJ2IjoiMSJ9.DOdzm3ZtIlpndPMKz1_w3ArHYeWFyg7a6I7a-hBsFcqgqOZau7yclK6Iq8aJZwuLrol3gKwlBXFiEzRLIXB0n_r9Cxhp6Kymi1YbrQ2OOLu2awg6NH_ypOs1uqhuLlfpHjUtOoBThVQGq_mPrjmmbPGCV5f-3_CekBVR_vr74uS8_VwUC8c3_YDY02aPiPFcHLzSR_ciwRTH5R_WsykhYi40hfydP0BUyUZKB1NeD0tzvpbj5kTK1KMirG5NMOkcHti9uq751SlP29fBlxvSkGWv3s9cRGiefv_FBDdHT-o.KDmr1RdstrKhvVlzG-zf3cjABGGZyTQdd5UUTM3tKQU&dib_tag=se&keywords=sarees%2Bfor%2Bsilk%2Bwoman&qid=1786012657&sprefix=sarees%2Caps%2C308&sr=8-1-spons&aref=TrnRC6cKnn&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
+class="btn" target="blank">Order Now</a></button>
+</div>
+
+<div class="card">
+    <img src="C:\Users\User\Desktop\style heaven\imges\dress4.jpg" alt="Stylish Kurti">
+    <h3>Stylish Kurti</h3>
+    <p class="price">₹999</p>
+    <button><a href="https://www.amazon.in/AA-Creation-Khadi-Cotton-Khadi_09_4XL/dp/B0H1R86HXS/ref=sr_1_6?crid=3AT0QL08D9RTK&dib=eyJ2IjoiMSJ9.RWp6n0JmEmNfjXdZ2A-e05u8NBTZYasbAz-nWggxHo7yzJlQVLfEYN_YWJK8nveWlL3t3IgsROKMcLYf0xQGNKgfHAuVExn0Whvt489XZp1fBv8SgMer9R-lwhT75kKyPJxSdO8il4qUlFbdnhsF_0VMEHR47vkQ7G8mTYFtAmlO1Vdw4jfMePIbW3mJ1LPlvxEEcE5CKAuWb34ziSBCZ6n3TMK6ydazKIyZVEkmEs2eHuZUqeD8dtunOQpci0_BX9dx_yIPoijiNUaRubtYrOgMtxuT0orkdMwzN1Dc_kA.j2TOQzuFl04wItJVojbDcycUxsiHR3ioKheCH_OYclk&dib_tag=se&keywords=kurti%2Bfor%2Bwomen%2Bcotton&qid=1786012386&s=apparel&sprefix=kurtfor%2Bwomen%2Capparel%2C357&sr=1-6&th=1&psc=1"
+class="btn" target="blank">Order Now</a></button>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+    <h3>Style Heaven</h3>
+
+    <p>Your Destination for Trendy Women's Fashion</p>
+
+    <br>
+
+    <p>Email: styleheaven@gmail.com</p>
+
+    <p>Phone: +91 98765 43210</p>
+
+    <br>
+
+    <p>&copy; 2026 Style Heaven. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

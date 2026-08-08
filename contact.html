@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Style Heaven</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+/* Hero Section */
+
+.hero{
+    background: url("images/contacthero.png") no-repeat center center;
+    background-size: cover;
+    height:690px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top:180px;
+}
+/* Contact Page */
+
+.contact-page{
+    padding:60px;
+    text-align:center;
+}
+
+.contact-page h1{
+    font-size:42px;
+    color:#ff2f74;
+    margin-bottom:10px;
+}
+
+.contact-page p{
+    color:#555;
+    margin-bottom:30px;
+}
+
+.contact-container{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.contact-info{
+    width:320px;
+    text-align:left;
+    font-size:18px;
+}
+
+.contact-info p{
+    margin:15px 0;
+}
+
+.contact-form{
+    width:400px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.contact-form button{
+    width:100%;
+    padding:14px;
+    background:#ff2f74;
+    color:white;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.contact-form button:hover{
+    background:#e91e63;
+}
+.footer{
+    background:#111;
+    color:#fff;
+    padding:40px 20px;
+    text-align:center;
+    text-decoration:none;
+}
+
+.footer a{
+    color:#fff;
+    text-decoration:none;
+    display:block;
+    margin:8px 0;
+    font-size:18px;
+    transition:0.3s;
+    display:inline-block;
+}
+
+.footer a:hover{
+    color:#ff4d6d;
+}
+
+.footer h3{
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.footer p{
+   margin:5px 0;
+    font-size:17px;
+    text-decoration:none; 
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        Style <span>Heaven</span>
+    </div>
+
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="women.html">Women</a></li>
+        <li><a href="men.html">Men</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+       <li><a href="ordernow.html" class="order-btn">Order Now</a></li>
+    </ul>
+
+</nav>
+
+<!-- Contact Section -->
+
+<section class="contact-page">
+
+    <h1>Contact Us</h1>
+
+    <p>We'd love to hear from you!</p>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Our Office</h3>
+
+            <p><i class="fa-solid fa-location-dot"></i> Vizianagaram, Andhra Pradesh</p>
+
+            <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+
+            <p><i class="fa-solid fa-envelope"></i> styleheaven@gmail.com</p>
+
+            <p><i class="fa-solid fa-clock"></i> Mon - Sat : 9:00 AM - 7:00 PM</p>
+
+        </div>
+
+        <form class="contact-form">
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <input type="text" placeholder="Subject">
+
+            <textarea rows="6" placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+    <p>© 2026 Style Heaven. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
